@@ -1,26 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-serif: var(--font-serif);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-hair: var(--hair);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-deep: var(--terracotta-deep);
+  --color-terracotta-soft: var(--terracotta-soft);
+  --color-terracotta-tint: var(--terracotta-tint);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  /* Cognify warm minimal palette */
+  --background:      #f7f4ec;   /* warm cream paper */
+  --foreground:      #1f1d1a;   /* near-black ink */
+
+  --surface:         #fbfaf4;
+  --surface-2:       #f1ece0;
+  --surface-3:       #e8e2d1;
+
+  --card:            #ffffff;
+  --card-foreground: #1f1d1a;
+
+  --popover:         #ffffff;
+  --popover-foreground: #1f1d1a;
+
+  /* Terracotta accent */
+  --terracotta:      #c96442;
+  --terracotta-deep: #a64f30;
+  --terracotta-soft: #f4dccd;
+  --terracotta-tint: #fbeee3;
+
+  /* Shadcn primary = terracotta */
+  --primary:         #c96442;
+  --primary-foreground: #ffffff;
+
+  --secondary:       #f1ece0;
+  --secondary-foreground: #1f1d1a;
+
+  --muted:           #f1ece0;
+  --muted-foreground: #6e675c;
+
+  --accent:          #f1ece0;
+  --accent-foreground: #1f1d1a;
+
+  --destructive:     #a8412e;
+
+  /* Ink scale */
+  --ink:             #1f1d1a;
+  --ink-2:           #3a3631;
+
+  /* Borders */
+  --border:          #e6dfce;
+  --hair:            #e6dfce;
+  --input:           #e6dfce;
+  --ring:            #c96442;
+
+  /* Semantic */
+  --ok:              #5a7a4a;
+  --ok-soft:         #e1eada;
+  --warn:            #a87523;
+  --warn-soft:       #f3e6c8;
+  --bad:             #a8412e;
+  --bad-soft:        #f1d9d2;
+  --info:            #406e7a;
+  --info-soft:       #d8e6e9;
+
+  /* Fonts */
+  --font-sans:  'Geist', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+  --font-mono:  'Geist Mono', ui-monospace, monospace;
+
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.005em;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Prose: Markdown lesson content ──────────────────────── */
+.prose {
+  color: var(--ink-2);
+  font-size: 15.5px;
+  line-height: 1.72;
+  max-width: 680px;
+}
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  font-weight: 400;
+}
+.prose h1 { font-size: 40px; line-height: 1.05; margin: 0 0 0.75rem; }
+.prose h2 { font-size: 24px; margin-top: 2.25rem; margin-bottom: 0.75rem; }
+.prose h3 { font-size: 19px; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+.prose p  { margin: 0 0 1rem; }
+.prose ul, .prose ol { padding-left: 1.5rem; margin: 0.75rem 0 1rem; }
+.prose li { margin: 0.3rem 0; }
+.prose strong { font-weight: 600; color: var(--ink); }
+.prose em { font-style: italic; }
+.prose a  { color: var(--terracotta); text-decoration: underline; text-underline-offset: 2px; }
+.prose blockquote {
+  border-left: 3px solid var(--terracotta);
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin: 1.25rem 0;
+  color: var(--muted-foreground);
+  font-style: italic;
+}
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+/* Inline code */
+.prose code {
+  font-family: var(--font-mono);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.875em;
+  color: var(--ink);
+}
+/* Code blocks */
+.prose pre {
+  background: var(--ink);
+  color: #e8e0d0;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 13.5px;
+  line-height: 1.65;
+  margin: 1.25rem 0;
+}
+.prose pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
 }
