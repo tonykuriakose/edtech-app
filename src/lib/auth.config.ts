@@ -6,10 +6,15 @@ import Google from "next-auth/providers/google";
 // The full auth.ts adds the Prisma adapter on top of this
 export const authConfig: NextAuthConfig = {
   providers: [
-    Google({
-      clientId: process.env.GOOGLE_CLIENT_ID!,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-    }),
+    // Only enable Google OAuth if both credentials are configured
+    ...(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET
+      ? [
+          Google({
+            clientId: process.env.GOOGLE_CLIENT_ID,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+          }),
+        ]
+      : []),
     // Credentials provider listed here so NextAuth knows the strategy exists
     // Actual authorize() logic lives in auth.ts
     Credentials({}),
