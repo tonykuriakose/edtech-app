@@ -213,7 +213,7 @@ export default function LandingPage() {
             <span>Built by Tony Kuriakose</span>
             <span className="text-border">·</span>
             <a
-              href="https://github.com"
+              href="https://github.com/tonykuriakose"
               className="hover:text-foreground transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -222,7 +222,7 @@ export default function LandingPage() {
             </a>
             <span className="text-border">·</span>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/tony-fullstackdev/"
               className="hover:text-foreground transition-colors"
               target="_blank"
               rel="noopener noreferrer"
