@@ -3,7 +3,7 @@ import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 
-export const metadata = { title: "Users — Admin — Cognify" };
+export const metadata = { title: "Users — Admin — Edapt" };
 
 export default async function AdminUsersPage() {
   const session = await auth();

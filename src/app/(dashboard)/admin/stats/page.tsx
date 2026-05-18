@@ -2,7 +2,7 @@ import { prisma } from "@/lib/prisma";
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 
-export const metadata = { title: "Platform Stats — Admin — Cognify" };
+export const metadata = { title: "Platform Stats — Admin — Edapt" };
 
 export default async function AdminStatsPage() {
   const session = await auth();

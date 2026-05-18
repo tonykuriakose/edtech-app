@@ -4,7 +4,7 @@ import { prisma } from "@/lib/prisma";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 
-export const metadata = { title: "New Course — Cognify" };
+export const metadata = { title: "New Course — Edapt" };
 
 export default async function NewCoursePage() {
   const session = await auth();

@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
   const { object } = await generateObject({
     model: geminiFlash,
     schema: QuizSchema,
-    prompt: `You are an expert educator creating a quiz for an online learning platform called Cognify.
+    prompt: `You are an expert educator creating a quiz for an online learning platform called Edapt.
 
 Course: "${lesson.module.course.title}"
 Lesson: "${lesson.title}"

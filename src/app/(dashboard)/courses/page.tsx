@@ -3,7 +3,7 @@ import { auth } from "@/lib/auth";
 import Link from "next/link";
 import { BookOpen, Users, Clock, CheckCircle2 } from "lucide-react";
 
-export const metadata = { title: "Browse courses — Cognify" };
+export const metadata = { title: "Browse courses — Edapt" };
 
 export default async function CoursesPage() {
   const session = await auth();

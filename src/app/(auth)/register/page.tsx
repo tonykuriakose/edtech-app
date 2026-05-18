@@ -59,7 +59,7 @@ export default function RegisterPage() {
           c
         </div>
         <span style={{ fontFamily: "var(--font-serif)", fontSize: 20, letterSpacing: "-0.02em" }}>
-          Cognify
+          Edapt
         </span>
       </div>
 

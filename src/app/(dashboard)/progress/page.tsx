@@ -3,7 +3,7 @@ import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { Flame, TrendingUp, AlertCircle } from "lucide-react";
 
-export const metadata = { title: "Progress — Cognify" };
+export const metadata = { title: "Progress — Edapt" };
 
 export default async function ProgressPage() {
   const session = await auth();

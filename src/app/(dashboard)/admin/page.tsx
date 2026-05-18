@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { Users, BookOpen, GraduationCap, BarChart2 } from "lucide-react";
 
-export const metadata = { title: "Admin — Cognify" };
+export const metadata = { title: "Admin — Edapt" };
 
 export default async function AdminPage() {
   const session = await auth();

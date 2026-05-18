@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props) {
     select: { title: true },
   });
   return {
-    title: course ? `Manage: ${course.title} — Cognify` : "Manage — Cognify",
+    title: course ? `Manage: ${course.title} — Edapt` : "Manage — Edapt",
   };
 }
 

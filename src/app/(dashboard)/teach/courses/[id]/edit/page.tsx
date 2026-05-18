@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props) {
     where: { id },
     select: { title: true },
   });
-  return { title: course ? `Edit: ${course.title} — Cognify` : "Edit — Cognify" };
+  return { title: course ? `Edit: ${course.title} — Edapt` : "Edit — Edapt" };
 }
 
 export default async function EditCoursePage({ params }: Props) {

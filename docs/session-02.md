@@ -6,7 +6,7 @@
 
 ## What we did
 
-Designed and validated the full database schema for Cognify — every table the app will ever need.
+Designed and validated the full database schema for Edapt — every table the app will ever need.
 
 ---
 

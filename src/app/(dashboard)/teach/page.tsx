@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { BookOpen, Users, ChevronRight } from "lucide-react";
 
-export const metadata = { title: "Teaching — Cognify" };
+export const metadata = { title: "Teaching — Edapt" };
 
 export default async function TeachPage() {
   const session = await auth();

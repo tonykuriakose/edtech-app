@@ -1,4 +1,4 @@
-# Cognify — Session Notes
+# Edapt — Session Notes
 
 Each session is like a 20-minute YouTube tutorial — one focused topic, fully working by the end.
 

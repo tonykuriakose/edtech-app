@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props) {
     where: { slug, status: "PUBLISHED" },
     select: { title: true, description: true },
   });
-  if (!course) return { title: "Course not found — Cognify" };
-  return { title: `${course.title} — Cognify`, description: course.description };
+  if (!course) return { title: "Course not found — Edapt" };
+  return { title: `${course.title} — Edapt`, description: course.description };
 }
 
 export default async function CourseDetailPage({ params }: Props) {

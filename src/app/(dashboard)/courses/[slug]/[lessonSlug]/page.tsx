@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props) {
     where: { slug: lessonSlug },
     select: { title: true },
   });
-  return { title: lesson ? `${lesson.title} — Cognify` : "Lesson — Cognify" };
+  return { title: lesson ? `${lesson.title} — Edapt` : "Lesson — Edapt" };
 }
 
 export default async function LessonPage({ params }: Props) {

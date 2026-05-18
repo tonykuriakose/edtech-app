@@ -49,7 +49,7 @@ export default function LandingPage() {
         </h1>
 
         <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
-          Cognify adapts to how you learn. AI-generated quizzes find your gaps,
+          Edapt adapts to how you learn. AI-generated quizzes find your gaps,
           a context-aware tutor answers your questions, and every lesson moves you forward.
         </p>
 
@@ -245,13 +245,13 @@ function Brand() {
         className="w-6 h-6 rounded-md flex items-center justify-center text-white text-sm"
         style={{ background: "var(--ink)", fontFamily: "var(--font-serif)" }}
       >
-        c
+        e
       </div>
       <span
         className="text-foreground"
         style={{ fontFamily: "var(--font-serif)", fontSize: 18, letterSpacing: "-0.02em" }}
       >
-        Cognify
+        Edapt
       </span>
     </div>
   );

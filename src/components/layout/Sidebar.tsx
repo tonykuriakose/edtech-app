@@ -76,13 +76,13 @@ export default function Sidebar({ user }: { user: User }) {
           className="w-6 h-6 rounded-md flex items-center justify-center text-white text-sm flex-none"
           style={{ background: "var(--ink)", fontFamily: "var(--font-serif)" }}
         >
-          c
+          e
         </div>
         <span
           className="text-foreground"
           style={{ fontFamily: "var(--font-serif)", fontSize: 18, letterSpacing: "-0.02em" }}
         >
-          Cognify
+          Edapt
         </span>
       </Link>
 

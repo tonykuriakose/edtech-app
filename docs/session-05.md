@@ -97,7 +97,7 @@ export default async function CourseDetailPage({ params }: Props) {
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const course = await prisma.course.findUnique({ where: { slug } });
-  return { title: `${course.title} — Cognify` };
+  return { title: `${course.title} — Edapt` };
 }
 ```
 

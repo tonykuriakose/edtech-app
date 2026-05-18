@@ -5,7 +5,7 @@ import Link from "next/link";
 import { BookOpen, Flame, Trophy, CheckCircle } from "lucide-react";
 import ProgressRing from "@/components/course/ProgressRing";
 
-export const metadata = { title: "Dashboard — Cognify" };
+export const metadata = { title: "Dashboard — Edapt" };
 
 export default async function DashboardPage() {
   const session = await auth();

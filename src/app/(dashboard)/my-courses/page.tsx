@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, BookOpen } from "lucide-react";
 import ProgressRing from "@/components/course/ProgressRing";
 
-export const metadata = { title: "My Courses — Cognify" };
+export const metadata = { title: "My Courses — Edapt" };
 
 export default async function MyCoursesPage() {
   const session = await auth();

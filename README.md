@@ -1,8 +1,8 @@
-# Cognify — AI-Powered Adaptive Learning Platform
+# Edapt — AI-Powered Adaptive Learning Platform
 
 > House of Edtech Fullstack Developer Assignment — Jan 2026
 
-Cognify is a full-stack EdTech platform where students study structured lessons, take AI-generated adaptive quizzes, and get personalized tutoring. Teachers create and manage course content. The platform tracks progress, identifies weak areas, and adjusts quiz difficulty automatically.
+Edapt is a full-stack EdTech platform where students study structured lessons, take AI-generated adaptive quizzes, and get personalized tutoring. Teachers create and manage course content. The platform tracks progress, identifies weak areas, and adjusts quiz difficulty automatically.
 
 ---
 

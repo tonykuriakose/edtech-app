@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props) {
     select: { title: true },
   });
   return {
-    title: course ? `Analytics: ${course.title} — Cognify` : "Analytics — Cognify",
+    title: course ? `Analytics: ${course.title} — Edapt` : "Analytics — Edapt",
   };
 }
 

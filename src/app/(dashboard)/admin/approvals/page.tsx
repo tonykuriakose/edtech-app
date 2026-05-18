@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { BookOpen } from "lucide-react";
 
-export const metadata = { title: "Approvals — Admin — Cognify" };
+export const metadata = { title: "Approvals — Admin — Edapt" };
 
 export default async function AdminApprovalsPage() {
   const session = await auth();

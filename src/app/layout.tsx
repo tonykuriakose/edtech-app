@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cognify — Adaptive Learning Platform",
+  title: "Edapt — Adaptive Learning Platform",
   description: "AI-powered learning with adaptive quizzes, personalized paths, and an AI tutor.",
 };
 

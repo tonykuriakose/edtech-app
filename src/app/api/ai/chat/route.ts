@@ -10,7 +10,7 @@ export async function POST(req: Request) {
 
   const result = streamText({
     model: geminiFlash,
-    system: `You are a helpful AI tutor for Cognify, an online learning platform.
+    system: `You are a helpful AI tutor for Edapt, an online learning platform.
 
 The student is currently studying this lesson: "${lessonTitle}"
 
