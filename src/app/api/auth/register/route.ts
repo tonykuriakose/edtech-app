@@ -55,9 +55,11 @@ export async function POST(req: Request) {
       { message: "Account created successfully", userId: user.id },
       { status: 201 }
     );
-  } catch {
+  } catch (err) {
+    console.error("[register]", err);
+    const message = err instanceof Error ? err.message : "Unknown error";
     return NextResponse.json(
-      { error: "Something went wrong. Please try again." },
+      { error: "Something went wrong. Please try again.", detail: message },
       { status: 500 }
     );
   }
